@@ -1,0 +1,12 @@
+include: package:leancode_lint/analysis_options.yaml
+
+custom_lint:
+  rules:
+    - use_design_system_item:
+      MyDate:
+        - instead_of: DateTime
+          from_package: dart:core
+
+analyzer:
+  plugins:
+    - custom_lint
